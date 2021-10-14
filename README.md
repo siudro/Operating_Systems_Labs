@@ -1,4 +1,4 @@
-# Operating_Systems_Labs_Basic_C++
+# Operating_Systems_Labs
 Open files with:
 ```
 gedit <fileName>.cpp
