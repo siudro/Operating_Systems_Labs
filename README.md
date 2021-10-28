@@ -15,6 +15,7 @@ $ git clone https://github.com/siudro/Operating_Systems_Labs.git
 ```
 Open files with:
 ```
+$ cd Operating_Systems_Labs
 $ cd OSLabs
 ```
 If you want to open the editor:
