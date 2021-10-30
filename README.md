@@ -9,7 +9,8 @@ Head to the directory you just created:
 ```
 $ cd OSLabsContainer
 ```
-now clone this repository:
+You can simply download the zip file or clone this repository:
+*(Note: [git](https://git-scm.com/downloads) is requiered to do this step.)*
 ```
 $ git clone https://github.com/siudro/Operating_Systems_Labs.git
 ```
