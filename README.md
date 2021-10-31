@@ -1,6 +1,7 @@
 # Operating_Systems_Labs
 ### This repository contains implemented codes in Operating Systems course using Terminal command lines and C++.
 
+### Usage
 In order to run the files, create a directory to contain all files:
 ```
 $ mkdir OSLabsContainer
