@@ -1,5 +1,17 @@
 # Operating_Systems_Labs
 ### This repository contains implemented codes in Operating Systems course using Terminal command lines and C++.
+### Prerequisites:
+- Linux operating system (Ubuntu 18.04)
+- Gedit
+- g++
+
+### g++ installation:
+on terminal, write:
+```
+$ sudo apt-get update
+$ sudo apt-get –f install
+$ sudo apt-get install g++
+```
 
 ### Usage
 In order to run the files, create a directory to contain all files:
