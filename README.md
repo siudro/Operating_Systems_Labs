@@ -1,7 +1,7 @@
 # Operating_Systems_Labs
 ### This repository contains implemented codes in Operating Systems course using Terminal command lines and C++.
 ### Prerequisites:
-- Linux Ubuntu distribution (operating system)
+- Linux [Ubuntu](download) distribution (operating system)
 - Gedit (text editor)
 - g++ (compiler)
 
@@ -26,6 +26,7 @@ Head to the directory you just created:
 $ cd OSLabsContainer
 ```
 You can simply download the zip file or clone this repository:
+
 *(Note: [git](https://git-scm.com/downloads) is requiered to do this step.)*
 ```
 $ git clone https://github.com/siudro/Operating_Systems_Labs.git
