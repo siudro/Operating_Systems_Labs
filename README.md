@@ -33,6 +33,12 @@ Head to the directory you just created:
 $ cd OSLabsContainer
 ```
 You can simply download the zip file or clone this repository:
+بالإمكان تنزيل جميع الملفات عبر الضغط على 
+، أو من خلال الاستنساخ Download ZIP
+
+
+![image](https://user-images.githubusercontent.com/83130573/142734722-89014c83-bf77-41df-a5c7-49e0d9fd2f5f.png)
+
 
 *(Note: [git](https://git-scm.com/downloads) is requiered to do this step.)*
 ```
