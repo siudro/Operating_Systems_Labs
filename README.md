@@ -1,7 +1,7 @@
 # Operating_Systems_Labs
 ### This repository contains implemented codes in Operating Systems course using Terminal command lines and C++.
 
-### جميع الأكواد االمستخدمة في معامل مادة نظم التشغيل باستخدام موجه الأوامر ولغة سي بلس بلس متوفرة في هذا المستودع
+### جميع الأكواد المستخدمة في معامل مادة نظم التشغيل باستخدام موجه الأوامر ولغة سي بلس بلس متوفرة في هذا المستودع
 ### Prerequisites:
 ## المتطلبات السابقة:
 - Linux [Ubuntu](download) distribution (operating system)
