@@ -17,8 +17,8 @@ $ sudo apt-get update
 $ sudo apt-get –f install
 $ sudo apt-get install g++
 ```
-Detailed instructions on setting up g++ can be found [here](https://github.com/siudro/Operating_Systems_Labs/blob/main/OSLabs/LabSlides/Lab02_Compiling_C_C%2B%2B_Programs.pdf)
-ستجدون شرح تفصيلي لطريقة تنصيب المترجم في هذا الملف.
+Detailed instructions on setting up g++ can be found [here](https://github.com/siudro/Operating_Systems_Labs/blob/main/OSLabs/Lab02_Compiling_practice/Lab02_Compiling_C_C%2B%2B_Programs.pdf)
+ستجدون شرح تفصيلي لطريقة تنصيب المترجم في [هذا](https://github.com/siudro/Operating_Systems_Labs/blob/main/OSLabs/Lab02_Compiling_practice/Lab02_Compiling_C_C%2B%2B_Programs.pdf) الملف.
 
 ### Usage
 ### كيف استخدم هذا المستودع؟
