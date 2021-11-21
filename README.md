@@ -39,21 +39,30 @@ You can simply download the zip file or clone this repository:
 
 ![image](https://user-images.githubusercontent.com/83130573/142734722-89014c83-bf77-41df-a5c7-49e0d9fd2f5f.png)
 
-
+*(ملاحظة:لاستنساخ الملف يتطلب تحميل [git](https://git-scm.com/downloads) )*
 *(Note: [git](https://git-scm.com/downloads) is requiered to do this step.)*
 ```
 $ git clone https://github.com/siudro/Operating_Systems_Labs.git
 ```
 Open files with:
+لفتح محتويات المجلد:
 ```
 $ cd Operating_Systems_Labs
 $ cd OSLabs
 ```
 If you want to open the editor:
+لفتح أي ملف سي بلس بلس، استخدم هذا الأمر مع استبدال <> باسم الملف
 ```
 $ gedit <fileName>.cpp
 ```
+If you did any changes in the cpp file, you should save it then compile it using:
+عند إجراء أي تغيير في ملف الكود، يجب حفظه ثم تجميعه قبل تجربة المخرجات باستخدام الأمر
+```
+$ gedit <fileName>.cpp
+```
+
 and if you want to test/run the code:
+لاختبار أو تشغيل اللف: 
 ```
 $ ./<fileName>
 ```
