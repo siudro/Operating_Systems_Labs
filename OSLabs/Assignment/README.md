@@ -1,5 +1,6 @@
 
-## The assingment solutions for option 1 and option 2 can be found in:
+## The assingment solutions for option 1 and option 2:
+## تطبيق متسلسة فيبوناتشي و كولاتز متوفرة في الروابط بالأسفل :
 
 ## 1- [`The Fibbonacci Sequence`](https://github.com/siudro/Fibonacci-sequence-)
 
