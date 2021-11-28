@@ -1,3 +1,4 @@
+English | [العربية](https://github.com/siudro/Operating_Systems_Labs/blob/main/README_ar.md)
 # Operating_Systems_Labs
 ### This repository contains implemented codes in Operating Systems course using Terminal command lines and C++.
 
