@@ -1,16 +1,17 @@
 # Operating_Systems_Labs
 ### This repository contains implemented codes in Operating Systems course using Terminal command lines and C++.
 
-### .جميع الأكواد المستخدمة في معامل مادة نظم التشغيل باستخدام موجه الأوامر ولغة سي بلس بلس متوفرة في هذا المستودع
+### جميع الأكواد المستخدمة في معامل مادة نظم التشغيل باستخدام موجه الأوامر ولغة سي بلس بلس متوفرة في هذا المستودع
 ### Prerequisites:
+
 ## المتطلبات السابقة:
 - Linux [Ubuntu](download) distribution (operating system)
 - Gedit (text editor)
 - g++ (compiler)
 
 
-### g++ installation:
-### تنصيب مترجم الأكواد جي بلس بلس:
+## g++ installation:
+## تنصيب مترجم الأكواد جي بلس بلس:
 on terminal, write:
 ```
 $ sudo apt-get update
@@ -21,8 +22,8 @@ Detailed instructions on setting up g++ can be found [here](https://github.com/s
 
 ستجدون شرح تفصيلي لطريقة تنصيب المترجم في [هذا](https://github.com/siudro/Operating_Systems_Labs/blob/main/OSLabs/Lab02_Compiling_practice/Lab02_Compiling_C_C%2B%2B_Programs.pdf) الملف.
 
-### Usage
-### كيف استخدم هذا المستودع؟
+## Usage
+## كيف استخدم هذا المستودع؟
 In order to run the files, create a directory to contain all files:
 
 يجب أولًا إنشاء مجلد أو مسار نحفظ فيه محتويات هذا المستودع، في موجه الأوامر يتم كتابة: 
