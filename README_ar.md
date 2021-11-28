@@ -21,7 +21,7 @@ $ sudo apt-get install g++
 ![image](https://user-images.githubusercontent.com/83130573/142734722-89014c83-bf77-41df-a5c7-49e0d9fd2f5f.png)
 
 بالإمكان فتح صفحة المستودع في أي متصفح في الأوبنتو ونسخ الأكواد، أو تنزيل نسخة لكل المستودع او استنساخه،
-إذا رغبت باستخدام الطريقة الأخيرة، يجيب أولًا إنشاء مجلد يحفظ فيه الملفات المستنسخة، في موجه الأوامر:
+إذا رغبت باستخدام الطريقة الأخيرة، يجب أولًا إنشاء مجلد يُحفظ فيه الملفات المستنسخة، في موجه الأوامر:
 ```
 $ mkdir OSLabsContainer
 ```
@@ -33,7 +33,7 @@ $ cd OSLabsContainer
 ```
 
 
-استنساخ المستودع، يجب لتنفيذ هذه الخطوة تحميل [git](https://git-scm.com/downloads) مسبقا
+استنساخ المستودع، يجب لتنفيذ هذه الخطوة تحميل [git](https://git-scm.com/downloads) مسبقًا
 ```
 $ git clone https://github.com/siudro/Operating_Systems_Labs.git
 ```
