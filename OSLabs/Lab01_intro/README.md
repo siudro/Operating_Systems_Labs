@@ -1,4 +1,6 @@
 Helpful youtube tutorials linked to this lab on:
+
+شروحات يوتيوب مفيدة لتحميل كل من :
 >how to install VitualBox on [Windows](https://www.youtube.com/watch?v=8mns5yqMfZk), [Mac OS](https://www.youtube.com/watch?v=hd0Lbtly41Y)
 
 
