@@ -1,7 +1,7 @@
 [English](https://github.com/siudro/Operating_Systems_Labs/blob/main/README.md) | العربية
 
 ![7223bece47ef99ec3ed361f4a4b36433](https://user-images.githubusercontent.com/83130573/143789788-f241f105-1c26-4c4d-94f4-8f8f9647b26c.jpg)
-
+[مصدر](https://www.wallpaperflare.com/) الصورة
 
 ### جميع الأكواد المستخدمة في معامل مادة نظم التشغيل باستخدام موجه الأوامر ولغة سي بلس بلس متوفرة في هذا المستودع
 
