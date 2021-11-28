@@ -65,7 +65,7 @@ If you did any changes in the cpp file, you should save it then compile it using
 
 عند إجراء أي تغيير في ملف الكود، يجب حفظه ثم تجميعه قبل تجربة المخرجات باستخدام الأمر
 ```
-$ gedit <fileName>.cpp
+$ g++ <fileName>.cpp -o <fileName> -lpthread
 ```
 
 and if you want to test/run the code:
