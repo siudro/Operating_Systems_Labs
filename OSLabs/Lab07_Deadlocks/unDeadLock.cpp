@@ -4,32 +4,31 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <cstdint>
-#include "pthread.h"
+#include "pthread.h" // استدعاء المكتبات اللازمة
 using namespace std;
 
 pthread_mutex_t Chopstick_mutex [5] = {PTHREAD_MUTEX_INITIALIZER,PTHREAD_MUTEX_INITIALIZER,PTHREAD_MUTEX_INITIALIZER,PTHREAD_MUTEX_INITIALIZER,PTHREAD_MUTEX_INITIALIZER};
-// initialize 5 mutex for 5 chopsticks
+// إنشاء 5 ميوتكس لكل عود أكل
 void *function(void *);
-//declare function
+// إنشاءدالة
 
 int main(){
 
 	pthread_t Lawyer[5];
-	//declare 5 lawyers that eats with chopstick
+	// إنشاء خمسة ثريدات تعبر عن خمسة محامين يأكلون بالأعواد
 	int i;
 	cout<<dec;
 
 	for(i=0;i<5;i++){
 		pthread_create(&Lawyer[i], NULL, function, (void *)(intptr_t)i);}
-	// create 5 threads(lawyers), pass its index number to the function later, must cast its int first
+	// إنشاء الثريدات والتي تمرر بداخلهم الدالة ،رقم كل محامي أو ثريد يمثل برقم الاندكس
 
 	for(i=0;i<5;i++){
 		pthread_join(Lawyer[i], NULL);}
-	// wait all threads to end
-
+	// الانتظار حتى تنتهي جميع الثريدات
 	for(i=0;i<5;i++){
 		pthread_mutex_destroy(&Chopstick_mutex[i]);}
-	// destroy all mutex before ending the main
+	// تدمير جميع الميوتكس قبل أغلاق المين ضروري جدا
 	exit(0);
 
 }
@@ -39,28 +38,26 @@ int main(){
 	pthread_mutex_lock(&Chopstick_mutex[((intptr_t)vptr+1)%5]);
 	cout<<"Lawyer number "<<(intptr_t)vptr <<" got chopstick number ";
 	cout<<(intptr_t)vptr << endl;
-	//lawyer number i gets left chopstick i 
-	//sleep(1);
-	// remove sleep so that it would be quicker before another lawyer starts eating
-	// lock both chopsticks from the start
+	 // إغلاق الميوتكس لعود الأكل الأيمن والأيسر من البداية لضمان عدم تداخل المحامين أثناء عملية الأكل**
+	// المحامي برقم الاندكس(مثلا 1) يأخذ عود الأكل الأيسر
+	// يجب إزالة الانتظار لجعل عملية الأكل أسرع
 
 	cout<<"Lawyer number "<<(intptr_t)vptr <<" got chopstick number ";
 	cout<<((intptr_t)vptr+1)%5 << endl;
-	//lawyer number i gets right chopstick i making sure that i is less than 5
+	// المحامي برقم الاندكس(مثلا 1) يأخذ عود الأكل الأيمن
 	sleep(1);
 
 
 	cout<< "Lawyer number "<<(intptr_t)vptr<< " is eating with chopsticks ";
 	cout<< (intptr_t)vptr<< " & "<< (((intptr_t)vptr+1)%5) << endl;
-	// eating process that takes 2s
+	// عملية الأكل
 	sleep(1);
 
 	pthread_mutex_unlock(&Chopstick_mutex[(intptr_t)vptr]);
 	pthread_mutex_unlock(&Chopstick_mutex[((intptr_t)vptr+1)%5]);
-
+	// فتح الميوتكس حتى يأخذ المحامي التالي عودي الأكل 
 
 	return(NULL);
-	// unlock the mutexes , the left and right chopsticks
 }
 
 
