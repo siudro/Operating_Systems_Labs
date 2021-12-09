@@ -20,6 +20,7 @@ void* start_finish(void *vprt)
 			start[i]=finish[i-1];
 			finish[i]=start[i]+burst[i];
 	}//end for
+return(NULL);
 } //end start_finish function
 int main(){
 	pthread_t tidA, tidB;
