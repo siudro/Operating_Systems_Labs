@@ -3,25 +3,24 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/wait.h>
-#include "pthread.h"
+#include "pthread.h" // استدعاء المكتبات اللازمة
 using namespace std;
 int counter = 0;
-void*doit(void*);
+void*doit(void*); // تعريف الدالة
 int main()
 {
-	pthread_t tid;
-	pid_t pid, cpid;
+	pthread_t tid; // تعريف ثريد
+	pid_t pid, cpid; // تعريف باريت وتشايلد بروسس
 	int status;
-	pthread_create(&tid, NULL, doit,NULL);
+	pthread_create(&tid, NULL, doit,NULL); // إنشاء ثريد يقوم بالدخول على دالة تضيف في العداد وتطبع النتيجة
 
-	//sleep(1);
-	pid = fork();
+	pid = fork(); //  إنشاء تشايلد بروسس
 	if(pid<0){
 		cout<<"Fork faild etc \n";
 		exit(-1);
 }
-	else if(pid==0){
-		for(int i=0; i<10; i++){
+	else if(pid==0){ //في حال الاي دي للبروسس يساوي صفر إذن هو تشايلد بروسس
+		for(int i=0; i<10; i++){ // لوب تقوم بالإضافة للعداد 10 مرات وطباعة النتيجة
 			counter++;
 			cout<<"Child Counter= "<<counter<<endl;	
 			sleep(1);		
@@ -34,7 +33,7 @@ int main()
 }	
 
 }
-void*doit(void*vptr)
+void*doit(void*vptr) // دالة لطباعة العداد واللإضافة عليه
 {
 	sleep(0);
 	cout<<"Thread First Counter= "<<counter++ <<endl;
