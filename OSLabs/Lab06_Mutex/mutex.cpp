@@ -3,13 +3,13 @@
 #include <unistd.h>
 #include "pthread.h"//استدعاء المكتبات اللازمة
 using namespace std;
-// initialize mutex counter
+
 pthread_mutex_t Counter_mutex = PTHREAD_MUTEX_INITIALIZER;// تعريف ميوتكس كاونتر
-//declare global counter, funtion
+
 int counter = 0;// تعريف عداد قابل للوصول من كل الكود
 void*function(void*);// تعريف دالة
 int main(){
-	// declare threads and their id
+	
 	pthread_t tidA, tidB, tidC;// تعريف الايدي لثلاثة ثريدات
 	pthread_create(&tidA , NULL, function, NULL);// انشاء ثريد يدخل في الدالة أولا
 	pthread_create(&tidB , NULL, function, NULL);// انشاء ثريد ثاني يدخل في الدالة بعد الاولى
