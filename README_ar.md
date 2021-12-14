@@ -61,7 +61,8 @@ $ sudo apt-get install g++
 *ستجدون شرح تفصيلي لطريقة تنصيب المترجم في [هذا](https://github.com/siudro/Operating_Systems_Labs/blob/main/OSLabs/Lab02_Compiling_practice/Lab02_Compiling_C_C%2B%2B_Programs.pdf) الملف*
 
 
-## كيف استفيد هذا (الريبو) المستودع؟
+## كيف استفيد من هذا المشروع؟
+
 ![image](https://user-images.githubusercontent.com/83130573/142734722-89014c83-bf77-41df-a5c7-49e0d9fd2f5f.png)
 
 بالإمكان فتح صفحة المستودع في أي متصفح في الأوبنتو ونسخ الأكواد، أو تنزيل نسخة لكل المستودع او استنساخه،
