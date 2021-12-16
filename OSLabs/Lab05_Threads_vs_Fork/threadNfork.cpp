@@ -10,12 +10,12 @@ void*doit(void*); // تعريف الدالة
 int main()
 {
 	pthread_t tid; // تعريف ثريد
-	pid_t pid, cpid; // تعريف باريت وتشايلد بروسس
+	pid_t pid, cpid; // تعريف بارينت
 	int status;
 	pthread_create(&tid, NULL, doit,NULL); // إنشاء ثريد يقوم بالدخول على دالة تضيف في العداد وتطبع النتيجة
 
 	pid = fork(); //  إنشاء تشايلد بروسس
-	if(pid<0){
+	if(pid<0){// لم ينجح عمل الفورك في حال قيمة الاي دي أقل من صفر
 		cout<<"Fork faild etc \n";
 		exit(-1);
 }
@@ -27,8 +27,8 @@ int main()
 }
 }
 		else {
-			cpid = wait(&status);
-			pthread_join(tid, NULL);
+			cpid = wait(&status);// البارينت يقوم بانتظار انتهاء تنفيذ التشايلد
+			pthread_join(tid, NULL);// انتظار إنتهاء تنفيذ الثريد
 			exit(0);
 }	
 
