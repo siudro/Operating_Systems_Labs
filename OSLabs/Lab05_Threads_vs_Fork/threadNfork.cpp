@@ -33,7 +33,7 @@ int main()
 }	
 
 }
-void*doit(void*vptr) // دالة لطباعة العداد واللإضافة عليه
+void*doit(void*vptr) // دالة لطباعة العداد واللإضافة علي يدخل عليها الثريد الأول والثاني
 {
 	sleep(0);
 	cout<<"Thread First Counter= "<<counter++ <<endl;
