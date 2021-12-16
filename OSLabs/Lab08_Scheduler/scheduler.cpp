@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-	float n,tempb,tempa,tempp,tw,average,gap,arrive[3],burst[3], process[3],start[3],finish[3],waiting[3],response[3], turnaround[3];
+	float n,temp1,temp2,temp3,tw,average,gap,arrive[3],burst[3], process[3],start[3],finish[3],waiting[3],response[3], turnaround[3];
 	int i,j;
 //المستخدم يقوم بإدخال وقت الوصول والبرست (كم يأخذ وقت من المعالج لتنفيذ العملية) لكل عملية عددها i 
 	for(i=0;i<3;i++){ 
@@ -20,15 +20,18 @@ int main()
 		for( j=i+1;j<3;j++){
 
 			if(arrive[j]<arrive[i]){
-				tempa=arrive[i];
+				temp1=arrive[i];
 				arrive[i]=arrive[j];
-				arrive[j]=tempa;
-				tempb=burst[i];
+				arrive[j]=temp1;
+				// تبديل وقت الوصول الاكبر بوقت الوصول الاقل
+				temp2=burst[i];
 				burst[i]=burst[j];
-				burst[j]=tempb;
-				tempp=process[i];
+				burst[j]=temp2;
+				// تبديل وقت البرست للعملية صاحبة الوصول الاكبر بوقت برست العملية صاحبة الوصول الاقل
+				temp3=process[i];
 				process[i]=process[j];
-				process[j]=tempp;
+				process[j]=temp3;
+				// تبديل رقم الاندكس للعملية صاحبة وقت الوصول الاعلى برقم العملية ذات وقت الوصول الاقل
 			}//end if
 	}//end for
 
