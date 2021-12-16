@@ -77,6 +77,8 @@ int main(){
 		response[i]=start[i]-arrive[i];
 		waiting[i]=start[i]-arrive[i];
 		turnaround[i]=burst[i]+waiting[i];
+				// أو 
+		turnaround[i]=finish[i]-arrive[i];
 		tw+=waiting[i];
 	}//end for
 	average=tw/3; // حساب متوسط وقت الانتظار
