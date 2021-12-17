@@ -8,16 +8,16 @@ process[3],start[3],finish[3],waiting[3],response[3], turnaround[3]; // تعري
 
 void* start_finish(void *vprt) // تعريف وبدء دالة حساب بداية تنفيذ البروسس ونهايته
 {
-	start[0]=arrive[0];
-	finish[0]=arrive[0]+burst[0];// من قانون حساب الانتهاء من التنفيذ
-	for(int i=1;i<3;i++){ // لوب لحساب فجوة مابعد تنفيذ بروسس وبداية تنفيذ بروسس جديدة واستبعادها
+	start[0]=arrive[0];// اول بروسس يصل سيتم تنفيذه فورًا
+	finish[0]=arrive[0]+burst[0];
+	for(int i=1;i<3;i++){ // لحساب فجوة مابعد تنفيذ بروسس وبداية تنفيذ بروسس جديدة
 		gap=0;
 		if(arrive[i]>finish[i-1]){
 			gap=arrive[i]-finish[i-1];
 			start[i]=finish[i-1]+gap;
 		}//end if
 		else
-			start[i]=finish[i-1];
+			start[i]=finish[i-1]; // في حال عدم وجود فجوة
 			finish[i]=start[i]+burst[i];
 	}//end for
 return(NULL);
@@ -28,7 +28,7 @@ int main(){
 
 	int i,j;
 
-	for(i=0;i<3;i++){ // استقبال قيم وقت وصول البروسس والبرست 
+	for(i=0;i<3;i++){ // استقبال قيم وقت وصول البروسس والبرست من المستخدم
 		n=i+1;
 		process[i]=n;
 		cout<<"what is p"<<n<<" arrival time\t";
@@ -43,12 +43,15 @@ int main(){
 				tempa=arrive[i];
 				arrive[i]=arrive[j];
 				arrive[j]=tempa;
+				// تبديل البروسس حسب الذي يصل أولا
 				tempb=burst[i];
 				burst[i]=burst[j];
 				burst[j]=tempb;
+				//تبديل البرست حسب الذي يصل أولا
 				tempp=process[i];
 				process[i]=process[j];
 				process[j]=tempp;
+				// ترتيب تنفيذ البروسس حسب الذي يصل أولا
 			}//end if
 	}//end for
 	
